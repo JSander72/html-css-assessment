@@ -65,48 +65,45 @@ button {
     }
 }@media screen and (min-width: 344px) {
     .card {
-        position: relative;
-        display: grid;
         width: 344px;
-        height: 900px;
+        height: 350px;
         border: gray;
-        box-shadow: 0 2px 15px 0 grey;
+        border-radius: 1%;
+        display: inline-block;
     }
-
     .Img_1 {
-        border: 100%;
-
         height: 194px;
-
+        border-top: 1%;
     }
-
     .Img_2 {
-        height: 40px;
-        width: 40px;
-        border-radius: 20px;
-        justify-content: end;
-
+        float: left;
+        position: relative;
+        padding: 16px;
+        padding-right: 16px;
+        padding-top: 46px;
     }
-    .text_2 {
+    .textgroup {
         width: 344px;
+        text-align: left;
+        margin: auto;
     }
-
     .text {
         font-size: 22px;
         color: #000;
-        justify-content: right;
-    }
-/* .card_2 {
-    float: right;
-} */
-    .bodytext {
-        font-size: 11px;
-        color: #232f34;
-        padding: 16px;
-
+        padding-top: 26px;
     }
     .secondarytext {
         font-size: 11px;
         color: #232f34;
+    }
+    .bodytext {
+        font-size: 11px;
+        color: #232f34;
+        padding-top: 16px;
+        text-align: left;
+
+    }
+    .card:hover {
+        box-shadow: 0 2px 4px 0 grey;
     }
 }
