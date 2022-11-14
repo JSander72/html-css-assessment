@@ -49,13 +49,16 @@ button {
 @media screen and (min-width: 600px) {
     form {
         display: grid;
-        width: auto;
+        width: 100%;
         position: relative;
+        text-decoration: none;
     }
     label {
-        display: grid;
-        width: auto;
+        display: inline-block;
+        width: 100%;
         position: relative;
+        text-decoration: none;
+
     }
     input,
     select,
@@ -63,7 +66,29 @@ button {
         width: 100%;
         color: #000;
     }
-}@media screen and (min-width: 344px) {
+}
+@media screen and (max-width: 599px) {
+    form {
+        display: grid;
+        width: 100%;
+        position: relative;
+        text-decoration: none;
+    }
+    label {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        text-decoration: none;
+
+    }
+    input,
+    select,
+    textarea {
+        width: 100%;
+        color: #000;
+    }
+}
+@media screen and (min-width: 344px) {
     .card {
         width: 344px;
         height: 350px;
@@ -71,39 +96,40 @@ button {
         border-radius: 1%;
         display: inline-block;
     }
-    .Img_1 {
-        height: 194px;
-        border-top: 1%;
+    .Img_1{
+        border-radius: 5% 5% 0% 0%;
+
     }
-    .Img_2 {
+    .Img_2{
         float: left;
-        position: relative;
-        padding: 16px;
+        padding: 10px;
         padding-right: 16px;
-        padding-top: 46px;
+        border-radius: 50%;
     }
-    .textgroup {
+    .textgroup{
         width: 344px;
         text-align: left;
         margin: auto;
     }
-    .text {
+    .text{
         font-size: 22px;
+        margin: auto;
         color: #000;
-        padding-top: 26px;
     }
-    .secondarytext {
+    .secondarytext{
+        font-size: 11px;
+        margin-block: auto;
+        color: #232f34;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+    .bodytext{
         font-size: 11px;
         color: #232f34;
-    }
-    .bodytext {
-        font-size: 11px;
-        color: #232f34;
-        padding-top: 16px;
-        text-align: left;
+        padding: 16px;
 
     }
-    .card:hover {
+    .card:hover{
         box-shadow: 0 2px 4px 0 grey;
     }
 }
